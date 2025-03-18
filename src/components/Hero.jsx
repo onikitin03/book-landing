@@ -1,6 +1,8 @@
 import { motion, useTransform, useScroll, useSpring, useMotionValue } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 import { FiArrowRight } from 'react-icons/fi';
+// Import the image directly
+import bookSetupImage from '../assets/book-setup.png';
 
 const Hero = () => {
   const containerRef = useRef(null);
@@ -169,7 +171,7 @@ const Hero = () => {
                 {/* Main 3D book */}
                 <div className="book-mockup">
                   <img 
-                    src={import.meta.env.BASE_URL + "images/book-setup.png"} 
+                    src={bookSetupImage} 
                     alt="AI Book Generator Interface" 
                     className="rounded-xl shadow-2xl relative z-10"
                   />

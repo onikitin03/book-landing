@@ -2,6 +2,14 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, useInView, AnimatePresence, useMotionValue, useTransform } from 'framer-motion';
 import { FiBookOpen, FiUsers, FiLayout, FiEye, FiEdit, FiFileText, FiArrowRight } from 'react-icons/fi';
 
+// Import images directly
+import bookSetupImage from '../assets/book-setup.png';
+import storyStructureImage from '../assets/story-structure.png';
+import characterAnalysisImage from '../assets/character-analysis.png';
+import chapterAnalysisImage from '../assets/chapter-analysis.png';
+import coverDesignImage from '../assets/cover-design.png';
+import documentPreviewImage from '../assets/document-preview.png';
+
 // Tab Data
 const techTabs = [
   {
@@ -10,7 +18,7 @@ const techTabs = [
     label: 'Book Setup',
     title: 'Start your project right',
     description: 'Set up your book project with all the essential elements, from genre and target audience to themes and writing style.',
-    image: '/assets/book-setup.png',
+    image: bookSetupImage,
     features: [
       'Genre selection and analysis',
       'Target audience definition',
@@ -26,7 +34,7 @@ const techTabs = [
     label: 'Story Structure',
     title: 'Build perfect story arcs',
     description: 'Our AI analyzes successful book structures to generate compelling story arcs that keep readers engaged from start to finish.',
-    image: '/assets/story-structure.png',
+    image: storyStructureImage,
     features: [
       'Genre-specific story templates',
       'Plot point generation',
@@ -42,7 +50,7 @@ const techTabs = [
     label: 'Character Development',
     title: 'Create memorable characters',
     description: 'Develop multi-dimensional characters with rich backstories, clear motivations, and authentic dialogue that resonates with readers.',
-    image: '/assets/story-structure.png',
+    image: characterAnalysisImage,
     features: [
       'Character archetype templates',
       'Personality trait analysis',
@@ -58,7 +66,7 @@ const techTabs = [
     label: 'Chapter Analysis',
     title: 'Perfect your chapter structure',
     description: 'Analyze and optimize individual chapters for pacing, engagement, and narrative flow to keep readers turning pages.',
-    image: '/assets/chapter-analysis.png',
+    image: chapterAnalysisImage,
     features: [
       'Chapter pacing analysis',
       'Scene structure optimization',
@@ -74,7 +82,7 @@ const techTabs = [
     label: 'Cover Design',
     title: 'Eye-catching cover designs',
     description: 'Generate professional book covers that stand out in the marketplace and attract your target readers.',
-    image: '/assets/cover-design.png',
+    image: coverDesignImage,
     features: [
       'Genre-appropriate visuals',
       'Typography optimization',
@@ -90,7 +98,7 @@ const techTabs = [
     label: 'Document Preview',
     title: 'Preview your finished book',
     description: 'See how your finished book will look with our interactive document preview feature, allowing you to experience your book as readers will.',
-    image: '/assets/document-preview.png',
+    image: documentPreviewImage,
     features: [
       'Interactive page turning',
       'Multiple format previews (PDF, ePub, Print)',
