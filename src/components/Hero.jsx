@@ -169,7 +169,7 @@ const Hero = () => {
                 {/* Main 3D book */}
                 <div className="book-mockup">
                   <img 
-                    src="/images/book-setup.png" 
+                    src={import.meta.env.BASE_URL + "images/book-setup.png"} 
                     alt="AI Book Generator Interface" 
                     className="rounded-xl shadow-2xl relative z-10"
                   />
