@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://onikitin03.github.io/ai-book-client-demo",
+  "homepage": "https://onikitin03.github.io/ai-book-demo",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
